@@ -15,7 +15,7 @@ function addToCart(name) {
 var itemName = name;
 var itemPrice = Math.floor(Math.random()*100)};
 var items = new Object({itemName: name, itemPrice: price});
-cart.push(items);
+getCart().push(items);
 return `${itemName} has been added to your cart.`;
 }
 /*
