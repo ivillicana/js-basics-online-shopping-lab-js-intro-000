@@ -26,13 +26,14 @@ function viewCart() {
   }
 
   else if (getCart().length === 1){
+    addToCart(1);
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
     return `In your cart, you have ${itemNamesArray[0]} at $${itemPricesArray[0]}.`;
 
   }
 }
-
+/*
   else if (getCart().length > 1){
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
@@ -41,7 +42,7 @@ function viewCart() {
     }
       return `In your cart, you have ${manyItems}`;
   }
-/*
+
   else if (getCart().length > 1){
     let i = 0;
     let thisCart = [];
