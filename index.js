@@ -29,10 +29,10 @@ function viewCart() {
   }
 /*
   else if (getCart().length ===2){
-    
+
     return `In your cart, you have ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`;
   }
-  
+
   else if (getCart().length > 1){
     let i = 0;
     let thisCart = [];
