@@ -20,9 +20,14 @@ function addToCart(name) {
 
 function viewCart() {
   let i = 1;
-  while(getCart().length > 0){
-  return `In your cart, you have ${getCart().first} at $${getCart().second}, pancake batter at $5, and eggs at $49.`;
+  if(getCart().length > 0){
+    return `In your cart, you have ${getCart()[i].first} at $${getCart().second}, pancake batter at $5, and eggs at $49.`;
   }
+
+  else if (getCart().length === 0){
+    return `Your shopping cart is empty.`;
+  }
+  
 }
 
 function total() {
