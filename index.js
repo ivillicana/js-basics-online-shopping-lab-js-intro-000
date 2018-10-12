@@ -17,31 +17,4 @@ function addToCart(name) {
   getCart().push(items);
   return `${itemName} has been added to your cart.`;
 }
-/*
-function viewCart() {
-  let i = 1;
-  if (getCart().length === 0){
-    return `Your shopping cart is empty.`;
-  }
 
-  else if (getCart().length === 1){
-    return `In your cart, you have ${getCart()[i].itemName} at $${getCart().itemPrice}, pancake batter at $5, and eggs at $49.`;
-  }
-
-  else if (getCart().length > 1){
-    return `In your cart, you have ${getCart()[i].first} at $${getCart().second}, pancake batter at $5, and eggs at $49.`;
-  }
-
-}
-
-function total() {
-  // write your code here
-}
-
-function removeFromCart(item) {
-  // write your code here
-}
-
-function placeOrder(cardNumber) {
-  // write your code here
-}
