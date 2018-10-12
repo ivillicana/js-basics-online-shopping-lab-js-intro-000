@@ -29,9 +29,13 @@ function viewCart() {
   }
 
   else if (getCart().length > 1){
-    return `In your cart, you have ${getCart().itemName} at $${getCart().itemPrice}, pancake batter at $5, and eggs at $49.`;
+    let i = 1;
+    let thisCart = [];
+    while (i < getCart().length){
+      thisCart.push(getCart()[i].itemName} at $${getCart()[i].itemPrice};
+    }
+    return `In your cart, you have ${thisCart}.`;
   }
-
 }
 
 function total() {
@@ -45,3 +49,4 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
