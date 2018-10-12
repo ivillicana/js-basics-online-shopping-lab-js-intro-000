@@ -25,7 +25,7 @@ function viewCart() {
     return `Your shopping cart is empty.`;
   }
 
-  else if (getCart().length === 1){
+  else if (getCart().length > 1){
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
     //addToCart(itemNamesArray);
