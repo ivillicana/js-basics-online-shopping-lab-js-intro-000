@@ -32,11 +32,18 @@ function viewCart() {
     let i = 1;
     let thisCart = [];
     while (i < getCart().length){
-      thisCart.push(getCart()[i].itemName} at $${getCart()[i].itemPrice});
+      thisCart.push(`${getCart()[i].itemName} ${getCart()[i].itemPrice}`);
+      i++;
     }
     return `In your cart, you have ${thisCart}.`;
   }
 }
+
+/*
+item — In your cart, you have bananas at $17.
+2 items — In your cart, you have bananas at $17, and pancake batter at $5.
+3+ items — In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.
+*/
 
 function total() {
   // write your code here
