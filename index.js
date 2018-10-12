@@ -26,9 +26,9 @@ function viewCart() {
   }
 
   else if (getCart().length === 1){
-    var items = Object.keys(getCart());
-    var prices = Object.values(getCart());
-    return `In your cart, you have ${Object.keys(getCart())[0]} at $${}.`;
+    var itemNamesArray = Object.keys(getCart());
+    var itemPricesArray = Object.values(getCart());
+    return `In your cart, you have ${itemNamesArray[0]} at $${itemPricesArray[0]}.`;
 
   }
 /*
