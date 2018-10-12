@@ -20,17 +20,16 @@ function addToCart(name) {
 
 
 function viewCart() {
-  
+
   if (getCart().length === 0){
     return `Your shopping cart is empty.`;
   }
 
   else if (getCart().length === 1){
-    getCart()[0];
     return `In your cart, you have ${Object.keys(getCart())[0]} at $${}.`;
     var items = Object.keys(getCart());
     var prices = Object.values(getCart());
-    
+
   }
 /*
   else if (getCart().length ===2){
