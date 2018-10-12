@@ -27,18 +27,23 @@ function viewCart() {
   else if (getCart().length === 1){
     return `In your cart, you have ${getCart().itemName} at $${getCart().itemPrice}.`;
   }
-
+/*
+  else if (getCart().length ===2){
+    
+    return `In your cart, you have ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`;
+  }
+  
   else if (getCart().length > 1){
-    let i = 1;
+    let i = 0;
     let thisCart = [];
     while (i < getCart().length){
-      thisCart.push(`${getCart()[i].itemName} ${getCart()[i].itemPrice}`);
+      thisCart.push(`${getCart()[i].itemName} at ${getCart()[i].itemPrice}, and`);
       i++;
     }
     return `In your cart, you have ${thisCart}.`;
-  }
+    //`In your cart, you have ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`;
+  }*/
 }
-
 /*
 item — In your cart, you have bananas at $17.
 2 items — In your cart, you have bananas at $17, and pancake batter at $5.
