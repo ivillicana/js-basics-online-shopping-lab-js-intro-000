@@ -17,7 +17,7 @@ function addToCart(name) {
   getCart().push(items);
   return `${itemName} has been added to your cart.`;
 }
-
+/*
 function viewCart() {
   let i = 1;
   if (getCart().length === 0){
@@ -45,4 +45,4 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-*/
+
