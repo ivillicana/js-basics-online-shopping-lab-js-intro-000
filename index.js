@@ -17,4 +17,3 @@ function addToCart(name) {
   getCart().push(items);
   return `${itemName} has been added to your cart.`;
 }
-
