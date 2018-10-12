@@ -29,7 +29,7 @@ function viewCart() {
     //addToCart(1);
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
-    return `In your cart, you have ${itemNamesArray[1]} at $${itemPricesArray[1]}.`;
+    return `In your cart, you have ${itemNamesArray[]} at $${itemPricesArray[]}.`;
 
   }
 }
