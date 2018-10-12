@@ -25,7 +25,7 @@ function viewCart() {
   }
 
   else if (getCart().length === 1){
-    return `In your cart, you have ${getCart()} at $${getCart()}.`;
+    return `In your cart, you have ${getCart()[0]} at $${getCart()[0]}.`;
   }
 /*
   else if (getCart().length ===2){
