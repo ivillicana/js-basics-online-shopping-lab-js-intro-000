@@ -18,13 +18,22 @@ function addToCart(name) {
   return `${itemName} has been added to your cart.`;
 }
 
+
 function viewCart() {
   if (getCart().length === 0){
     return `Your shopping cart is empty.`;
   }
 
   else if (getCart().length === 1){
-    return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
+    /*var myCart = getCart();
+    function updatePlaylist(myCart, itemName, itemPrice){
+    myCart[itemName] = itemPrice;
+    return myCart;
+}*/
+    getCart()[0]
+    return `In your cart, you have ${Object.entries(getCart())[0]} at $${}.`;
+    var items = Object.entries(cart);
+    var prices = Object.values(cart);
   }
 /*
   else if (getCart().length ===2){
@@ -47,6 +56,7 @@ function viewCart() {
 item — In your cart, you have bananas at $17.
 2 items — In your cart, you have bananas at $17, and pancake batter at $5.
 3+ items — In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.
+
 */
 
 function total() {
