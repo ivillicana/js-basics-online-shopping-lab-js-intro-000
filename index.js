@@ -14,7 +14,7 @@ function addToCart(name) {
   var itemName = name;
   var price = Math.floor(Math.random()*100);
   var items = new Object({itemName: name, itemPrice: price});
-  cart.push(items);
+  getCart().push(items);
   return `${itemName} has been added to your cart.`;
 }
 
@@ -25,9 +25,9 @@ function viewCart() {
   }
 
   else if (getCart().length === 1){
-    return `In your cart, you have ${getCart()[i].first} at $${getCart().second}, pancake batter at $5, and eggs at $49.`;
+    return `In your cart, you have ${getCart()[i].itemName} at $${getCart().itemPrice}, pancake batter at $5, and eggs at $49.`;
   }
-  
+
   else if (getCart().length > 1){
     return `In your cart, you have ${getCart()[i].first} at $${getCart().second}, pancake batter at $5, and eggs at $49.`;
   }
