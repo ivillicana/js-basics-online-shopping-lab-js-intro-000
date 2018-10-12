@@ -31,6 +31,7 @@ function viewCart() {
     return `In your cart, you have ${itemNamesArray[0]} at $${itemPricesArray[0]}.`;
 
   }
+}
 /*
   else if (getCart().length ===2){
 
@@ -47,7 +48,6 @@ function viewCart() {
     return `In your cart, you have ${thisCart}.`;
     //`In your cart, you have ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`;
   }*/
-}
 /*
 item — In your cart, you have bananas at $17.
 2 items — In your cart, you have bananas at $17, and pancake batter at $5.
