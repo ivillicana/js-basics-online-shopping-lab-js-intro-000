@@ -18,7 +18,7 @@ var items = new Object({itemName: name, itemPrice: price});
 cart.push(items);
 return `${itemName} has been added to your cart.`;
 }
-
+/*
 function viewCart() {
   // write your code here
 }
@@ -34,3 +34,4 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+*/
