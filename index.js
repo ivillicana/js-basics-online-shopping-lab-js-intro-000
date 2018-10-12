@@ -19,7 +19,10 @@ function addToCart(name) {
 }
 
 function viewCart() {
-
+  var itemName;
+  var itemPrice;
+  addToCart(itemName);
+  
   if (getCart().length === 0){
     return `Your shopping cart is empty.`;
   }
