@@ -32,7 +32,7 @@ function viewCart() {
     let i = 1;
     let thisCart = [];
     while (i < getCart().length){
-      thisCart.push(getCart()[i].itemName} at $${getCart()[i].itemPrice};
+      thisCart.push(getCart()[i].itemName} at $${getCart()[i].itemPrice});
     }
     return `In your cart, you have ${thisCart}.`;
   }
