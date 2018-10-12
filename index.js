@@ -26,19 +26,22 @@ function viewCart() {
   }
 
   else if (getCart().length === 1){
-    addToCart("lemons");
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
     return `In your cart, you have ${itemNamesArray[0]} at $${itemPricesArray[0]}.`;
 
   }
 }
-/*
-  else if (getCart().length ===2){
 
-    return `In your cart, you have ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`;
+  else if (getCart().length > 1){
+    var itemNamesArray = Object.keys(getCart());
+    var itemPricesArray = Object.values(getCart());
+    for (let i = 1; i <= 2; i++){
+      var manyItems = `${itemNamesArray[i]} at $${itemPricesArray[i]}, and`;
+    }
+      return `In your cart, you have ${manyItems}`;
   }
-
+/*
   else if (getCart().length > 1){
     let i = 0;
     let thisCart = [];
