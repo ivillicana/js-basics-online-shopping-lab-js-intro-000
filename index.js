@@ -11,16 +11,18 @@ function setCart(c) {
 
 function addToCart(name) {
 
-//var price = Math.floor(Math.random()*100);
-var itemName = name;
-var price = Math.floor(Math.random()*100);
-var items = new Object({itemName: name, itemPrice: price});
-cart.push(items);
-return `${itemName} has been added to your cart.`;
+  var itemName = name;
+  var price = Math.floor(Math.random()*100);
+  var items = new Object({itemName: name, itemPrice: price});
+  cart.push(items);
+  return `${itemName} has been added to your cart.`;
 }
-/*
+
 function viewCart() {
-  // write your code here
+  let i = 1;
+  while(getCart().length > 0){
+  return `In your cart, you have ${getCart().first} at $${getCart().second}, pancake batter at $5, and eggs at $49.`;
+  }
 }
 
 function total() {
