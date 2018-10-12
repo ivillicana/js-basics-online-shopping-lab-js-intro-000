@@ -25,10 +25,10 @@ function viewCart() {
     return `Your shopping cart is empty.`;
   }
 
-  else if (getCart().length > 1){
+  else if (getCart().length >= 1){
+    addToCart("lemons");
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
-    addToCart(itemNamesArray[0]);
     return `In your cart, you have ${itemNamesArray} at $${itemPricesArray}.`;
 
   }
