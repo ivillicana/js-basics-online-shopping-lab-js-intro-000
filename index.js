@@ -28,7 +28,7 @@ function viewCart() {
   else if (getCart().length > 1){
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
-    //addToCart(itemNamesArray);
+    addToCart(itemNamesArray[0]);
     return `In your cart, you have ${itemNamesArray} at $${itemPricesArray}.`;
 
   }
