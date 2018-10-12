@@ -23,14 +23,13 @@ function viewCart() {
   var price = Math.floor(Math.random()*100);
   var items = new Object({itemName: name, itemPrice: price});
   getCart().push(items);
-  //addToCart(itemName);
 
   if (getCart().length === 0){
     return `Your shopping cart is empty.`;
   }
 
   else if (getCart().length === 1){
-    return `In your cart, you have ${getCart()[0]} at $${getCart()[0]}.`;
+    return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
   }
 /*
   else if (getCart().length ===2){
