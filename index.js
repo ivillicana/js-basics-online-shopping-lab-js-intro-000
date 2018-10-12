@@ -26,7 +26,6 @@ function viewCart() {
   }
 
   else if (getCart().length === 1){
-    addToCart("lemons");
     var itemNamesArray = Object.keys(getCart());
     var itemPricesArray = Object.values(getCart());
     return `In your cart, you have ${itemNamesArray} at $${itemPricesArray}.`;
